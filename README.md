@@ -14,7 +14,7 @@
 
 Studi kasus ini saya susun sebagai bagian dari portofolio cybersecurity dengan fokus pada keamanan jaringan dan analisis insiden. Skenario yang digunakan berupa simulasi gangguan akses website akibat masalah pada lalu lintas jaringan, sehingga alur kejadian dapat dipahami dengan jelas.
 
-Pembahasan ini berdasarkan dari pembelajaran saya di program Google Cybersecurity Professional Certificate, khususnya pada course Connect and Protect: Networks and Network Security. Analisis dilakukan dengan menelusuri lalu lintas DNS dan ICMP menggunakan tools analisis jaringan untuk mengidentifikasi penyebab gangguan dan menentukan langkah penanganan yang tepat.
+Pembahasan ini berdasarkan dari pembelajaran saya di program Google Cybersecurity Professional Certificate, khususnya pada course Connect and Protect: Networks and Network Security. Analisis dilakukan dengan menelusuri lalu lintas DNS dan ICMP menggunakan tools tcpdump untuk mengidentifikasi penyebab gangguan dan menentukan langkah penanganan yang tepat.
 
 ---
 
