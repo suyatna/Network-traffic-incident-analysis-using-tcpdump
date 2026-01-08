@@ -61,3 +61,11 @@ Tujuan analisis meliputi:
 |G. Informasi hasil investigasi|Analisis log tcpdump menunjukkan bahwa permintaan DNS dikirim menggunakan protokol UDP ke server DNS melalui port 53. Server tidak memberikan respons DNS dan justru membalas dengan pesan ICMP udp port 53 unreachable. Permintaan tersebut terjadi berulang kali dengan hasil yang sama. Kondisi ini membuat browser tidak pernah mendapatkan alamat IP tujuan, sehingga koneksi ke website gagal sejak tahap awal.|
 |H. Dugaan akar penyebab|Akar masalah mengarah pada gangguan layanan DNS di sisi server tujuan. Kemungkinan penyebab meliputi layanan DNS yang tidak aktif, kesalahan konfigurasi jaringan, atau aturan firewall yang memblokir akses ke port 53. Pada beberapa kondisi, gangguan ini juga bisa dipicu oleh serangan yang menargetkan layanan DNS.|
 |I. Langkah selanjutnya|Langkah berikutnya difokuskan pada pemulihan layanan DNS dan pencegahan kejadian serupa. Tim teknis perlu memastikan layanan DNS berjalan normal pada port 53 serta meninjau konfigurasi firewall agar lalu lintas DNS tidak terblokir. Pengujian konektivitas DNS dilakukan dari beberapa titik jaringan untuk memastikan masalah tidak bersifat lokal. Pemantauan lalu lintas DNS juga perlu ditingkatkan agar gangguan dapat terdeteksi lebih dini. Setelah perbaikan diterapkan, akses website diuji kembali untuk memastikan layanan sudah kembali stabil.|
+
+---
+
+## 🏁 Conclusion <a name="conclusion">
+
+Hasil analisis lalu lintas jaringan menunjukkan bahwa insiden ini dipicu oleh kegagalan layanan DNS yang tidak dapat menerima permintaan pada port 53. Setiap permintaan DNS yang dikirim dari client melalui protokol UDP selalu dibalas dengan pesan ICMP destination port unreachable. Kondisi ini membuat proses resolusi domain gagal dan akses ke website terhenti.
+
+Insiden ini memperlihatkan bahwa gangguan pada satu layanan inti seperti DNS bisa langsung memengaruhi ketersediaan layanan web secara keseluruhan. Analisis paket menggunakan tcpdump membantu mengidentifikasi protokol dan layanan yang terdampak dengan jelas. Temuan ini dapat menjadi pijakan bagi tim teknis untuk melakukan perbaikan serta mencegah kejadian serupa di kemudian hari.
