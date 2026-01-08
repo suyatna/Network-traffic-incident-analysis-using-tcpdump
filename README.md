@@ -34,7 +34,7 @@ Temuan awal ini mengarah pada gangguan pada layanan DNS yang berdampak langsung 
 
 ## 🎯 Objective <a name="scenario">
 
-Studi kasus ini dibuat untuk memahami dan menganalisis gangguan jaringan yang berdampak langsung pada akses website. Perhatian utama difokuskan pada upaya menemukan sumber masalah melalui analisis lalu lintas jaringan dari data hasil tangkapan paket.
+Studi kasus ini dibuat untuk memahami dan menganalisis gangguan jaringan yang berdampak langsung pada akses website. Tujuan utama difokuskan pada upaya menemukan sumber masalah melalui analisis lalu lintas jaringan dari data hasil tangkapan paket.
 
 Tujuan analisis meliputi:
 - Mengidentifikasi protokol jaringan yang terlibat dan terdampak selama gangguan akses website
