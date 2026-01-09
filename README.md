@@ -32,7 +32,7 @@ Temuan awal ini mengarah pada gangguan pada layanan DNS yang berdampak langsung 
 
 ---
 
-## 🎯 Objective <a name="scenario">
+## 🎯 Objective <a name="objective">
 
 Studi kasus ini dibuat untuk memahami dan menganalisis gangguan jaringan yang berdampak langsung pada akses website. Fokus utama diarahkan pada pencarian sumber masalah melalui penelusuran lalu lintas jaringan dari data hasil tangkapan paket.
 
