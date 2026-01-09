@@ -1,4 +1,4 @@
-# Cybersecurity incident report: Network traffic analysis
+# Network traffic incident analysis using tcpdump
 
 ## 📑 Table of contents
 
