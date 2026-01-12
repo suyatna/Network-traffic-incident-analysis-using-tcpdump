@@ -1,4 +1,4 @@
-# Network traffic incident analysis using tcpdump
+# Network traffic incident analysis
 
 ## 📑 Table of contents
 
